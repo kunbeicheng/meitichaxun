@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@media screen and (min-width:1200px ) {
+				.bg{
+					display: flex;
+					width: 1200px;
+					margin: 0 auto;
+				}
+				.con{
+					flex: 1;
+				}
+			}
+			@media screen and (min-width:992px ) and (max-width:1200px ) {
+				.bg{
+					display: flex;
+					width: 992px;
+					margin: 0 auto;
+					flex-wrap: wrap;
+				}
+				.con:first-child{
+					width: 992px;
+				}
+				.con:nth-child(n+2){
+					align-self: flex-end;
+					flex: 1;
+				}
+			}
+			@media screen and (min-width:768px ) and (max-width:992px ) {
+				.bg{
+					display: flex;
+					width: 768px;
+					margin: 0 auto;
+					flex-wrap: wrap;
+				}
+				.con{
+					width: 384px;	
+				}
+			}
+			@media screen and (max-width:768px ) {
+				.bg{
+					width: 768px;
+					margin: 0 auto;
+				}
+			}
+			.con{
+				height: 60px;
+				color: white;
+				text-align: center;
+				line-height: 60px;
+				}
+			.con:nth-child(1){
+				background: red;	
+			}
+			.con:nth-child(2){
+				background: blue;
+			}
+			.con:nth-child(3){
+				background: black;
+			}
+			.con:nth-child(4){
+				background: orange;
+			}		
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="con">1</div>
+			<div class="con">2</div>
+			<div class="con">3</div>
+			<div class="con">4</div>
+		</div>	
+	</body>
+</html>
